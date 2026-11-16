@@ -1,0 +1,41 @@
+body {
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  border: 5px solid #4d5b73ff;
+  padding: 20px;
+  justify-content: space-around;
+  text-align: center;
+  color: #434d66ff;
+  background-image: linear-gradient(to right, #4d5b73ff, #e3d2b3ff);
+  border-radius: 15px;
+  text-shadow: 1px 1px 2px #0b0907ff;
+}
+
+.img-wrap {
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px #0b0907ff;
+}
+
+.img-wrap img {
+  display: block;
+  width: 150px;
+  border-radius: 15px;
+}
+
+.img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  box-shadow: inset 5px 5px 10px rgb(255, 255, 255);
+  pointer-events: none;
+}
